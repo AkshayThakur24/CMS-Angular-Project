@@ -1,0 +1,22 @@
+<body>
+    <div class="container">
+      <div class="login-box">
+        <h1>Login</h1>
+        <form>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" [(ngModel)]="name" id="username" name="username" placeholder="Enter your username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" [(ngModel)]="password" id="password" name="password" placeholder="Enter your password">
+          </div>
+          <button type="submit" (click)="checkInfo()" >Login</button><br>
+          <p style="color: red; font-size: 13px;"  *ngIf="falseValue">*Please Enter correct username or password</p>
+        </form>
+        
+      </div>
+      
+    </div>
+    
+  </body>

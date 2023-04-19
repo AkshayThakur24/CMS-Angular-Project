@@ -1,0 +1,27 @@
+<main >
+    <h2>View all Complaints</h2>
+
+    <!-- Table to display all complaints -->
+    <table >
+        <thead>
+            <tr>
+                <th>Complaint ID</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                
+                <td>{{item.no}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.status}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</main>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Complaint</title>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Delete Complaint</h1>
+      <form>
+        <label for="complaint-id">Complaint ID:</label>
+        <input type="text" [(ngModel)]="value" id="complaint-id" name="complaint-id">
+        <input type="submit" (click)="deleteval()" value="Delete">
+      </form>
+    </div>
+  </body>
+</html>
